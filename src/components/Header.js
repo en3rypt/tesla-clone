@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import CloseIcon from '@material-ui/icons/Close';
 import Link from './Link';
-
+import logo from '../../public/images/tesla.svg';
 function Header() {
 
     const [bOpen, setBOpen] = useState(false);
