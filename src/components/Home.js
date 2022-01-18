@@ -1,7 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import Section from './Section';
+import model3 from '../images/model-3.jpg';
+import modely from "../images/model-y.jpg";
+import models from "../images/model-s.jpg";
+import modelx from "../images/model-x.jpg";
+import solarroof from "../images/solar-roof.jpg";
+import solarpanel from "../images/solar-panel.jpg";
+import accessories from "../images/accessories.jpg";
 
-import Section from './Section'
 function Home() {
     return (
         <Container>
@@ -9,7 +16,7 @@ function Home() {
                 arrow={true}
                 title="Model 3"
                 description="Order Online for Touchless Delivery"
-                backgroundimg="model-3.jpg"
+                backgroundimg={model3}
                 lbtn="CUSTOM ORDER"
                 rbtn="EXISTING INVENTORY"
                 footer={false}
@@ -18,7 +25,7 @@ function Home() {
                 arrow={false}
                 title="Model Y"
                 description="Order Online for Touchless Delivery"
-                backgroundimg="model-y.jpg"
+                backgroundimg={modely}
                 lbtn="CUSTOM ORDER"
                 rbtn="EXISTING INVENTORY"
                 footer={false}
@@ -27,7 +34,7 @@ function Home() {
                 arrow={false}
                 title="Model S"
                 description="Order Online for Touchless Delivery"
-                backgroundimg="model-s.jpg"
+                backgroundimg={models}
                 lbtn="CUSTOM ORDER"
                 rbtn="EXISTING INVENTORY"
                 footer={false}
@@ -36,7 +43,7 @@ function Home() {
                 arrow={false}
                 title="Model X"
                 description="Order Online for Touchless Delivery"
-                backgroundimg="model-x.jpg"
+                backgroundimg={modelx}
                 lbtn="CUSTOM ORDER"
                 rbtn="EXISTING INVENTORY"
                 footer={false}
@@ -45,7 +52,7 @@ function Home() {
                 arrow={false}
                 title="Solar Panels"
                 description="Lowest Cost Solar Panels in America"
-                backgroundimg="solar-panel.jpg"
+                backgroundimg={solarpanel}
                 lbtn="ORDER NOW"
                 rbtn="LEARN MORE"
                 footer={false}
@@ -55,7 +62,7 @@ function Home() {
                 arrow={false}
                 title="Solar Roof"
                 description="Produce Clean Energy From Your Roof"
-                backgroundimg="solar-roof.jpg"
+                backgroundimg={solarroof}
                 lbtn="ORDER NOW"
                 rbtn="LEARN MORE"
                 footer={false}
@@ -63,7 +70,7 @@ function Home() {
             <Section
                 arrow={false}
                 title="Accessories"
-                backgroundimg="accessories.jpg"
+                backgroundimg={accessories}
                 lbtn="SHOP NOW"
                 footer={true}
             />

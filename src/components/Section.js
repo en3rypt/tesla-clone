@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
 import Link from './Link';
-
+import arrow from "../images/down-arrow.svg";
 function Section(props) {
     const footerArray = ['Tesla © 2022', 'Privacy & Legal', 'Contact', 'Careers', 'News', 'Engage', 'Locations'];
     console.log(props.footer);
@@ -39,7 +39,7 @@ function Section(props) {
                         </ButtonGroup>
 
                     }
-                    {props.arrow ? <DownArrow src="/images/down-arrow.svg" /> : null}
+                    {props.arrow ? <DownArrow src={arrow} /> : null}
 
 
                 </Buttons>
@@ -81,12 +81,11 @@ const Wrap = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/images/model-s.jpg');
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: ${props => `url("/images/${props.bgimg}")`};
+    background-image: ${props => `url("${props.bgimg}")`};
     scroll-snap-align: start;
     scroll-snap-stop: normal;
 `
