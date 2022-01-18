@@ -46,7 +46,7 @@ function Home() {
                 title="Solar Panels"
                 description="Lowest Cost Solar Panels in America"
                 backgroundimg="solar-panel.jpg"
-                lbtn="CUSTOM ORDER"
+                lbtn="ORDER NOW"
                 rbtn="LEARN MORE"
                 footer={false}
             />
